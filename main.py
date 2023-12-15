@@ -14,7 +14,7 @@ shot_history = []
 
 # Separate function as original generate_attack function is in the form:
 # (y,x) or (row, col) instead of the form (x, y) or (col, row)
-def generate_attack_xy() -> tuple:
+"""def generate_attack_xy() -> tuple:
     # print(shot_history)
     while True:
         row = random.randint(0, 9)  # If board size is not 10x10 this function will not work correctly
@@ -23,7 +23,7 @@ def generate_attack_xy() -> tuple:
 
         if shot_space not in shot_history:  # This makes sure a space is not shot more than once
             shot_history.append(shot_space)
-            return tuple((row, col))
+            return tuple((row, col))"""
 
 
 @app.route('/placement', methods=['GET', 'POST'])
@@ -76,14 +76,14 @@ def process_attack():
                 ai_atk = generate_attack()
 
                 # print(debug_display_current_board(player_boards.get('user_board')))
-                print(f"ai atk: {ai_atk}")
-                row1 = ai_atk[0]
+                # print(f"ai atk: {ai_atk}")
+                """row1 = ai_atk[0]
                 col1 = ai_atk[1]
                 print(f"row,col {row1},{col1}")
-                print(f"Shot at: {player_boards.get('user_board')[row1][col1]}")
+                print(f"Shot at: {player_boards.get('user_board')[row1][col1]}")"""
 
                 attack(ai_atk, board=player_boards.get('user_board'), battleships=fleet_1)
-                print(fleet_1)
+                # print(fleet_1)
 
                 # PROBLEM: When AI is winning it wins 2 turns after its hit the final ship
                 # atk function is returning a different board compared to

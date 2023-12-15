@@ -9,7 +9,7 @@ game_board = place_battleships(board=new_board, ships=fleet, algorithm='random')
 def attack(coordinates: tuple, board, battleships) -> bool:
     row = coordinates[0]
     col = coordinates[1]
-    print(f"ATK func target: {board[row][col]}")
+    # print(f"ATK func target: {board[row][col]}")
 
     if board[row][col] is not None:
         ship = board[row][col]
