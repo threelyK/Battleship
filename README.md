@@ -66,3 +66,4 @@ pytest ./tests
 ### Details
 - Author - Lego Yoda
 - License - [MIT License](https://opensource.org/license/mit/)
+- GitHub Repository - https://github.com/threelyK/Battleship
