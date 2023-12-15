@@ -1,7 +1,7 @@
 ﻿# Battleship Project
 
 ### Introduction
-In ECM1400, we were given the task to recreate the popular 2-player board game "Battleship" using Python. This game is played between 2 players, who place their ships on a grid and take alternating turns trying to guess the location of the opponent's ships in order to sink them. The first person to have their entire fleet sunk loses.
+In ECM1400, we were given the task to recreate the popular 2-player board game "Battleship" using Python. This game is played between 2 players, who place their ships on a grid and take alternating turns trying to guess the location of the opponent's ships in order to sink them. The first person to sink the entire enemy fleet wins.
 
 ### Features
 - **Single-player mode without an opponent** -  In command-line interface (CLI).
@@ -24,10 +24,17 @@ pip install flask
 ```
 
 ### Getting started tutorial
-- Install this package
 - Open the terminal
-- Find the directory of the package
+- Navigate to directory you would like to install the package
+```commandline
+cd {desired-installation-directory-of-package}
 ```
+- Clone the GitHub repository
+```commandline
+git clone https://github.com/threelyK/Battleship.git
+```
+- Navigate to installation directory
+```commandline
 cd {installation-directory-of-package}
 ```
 Type the corresponding code into the CLI depending on which version of the game you want to run.
